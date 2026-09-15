@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>grid & bintang</title>
+</head>
+
+<body>
+    <h3>Grid & Bintang</h3>
+
+    <script>
+        let nilai = 99;
+        let status;
+
+        if (nilai >= 90) {
+            status = "baik sekali";
+        }
+        else if (nilai >= 80) {
+            status = "baik";
+        }
+        else if (nilai >= 70) {
+            status = "cukup";
+        }
+        else if (nilai >= 60) {
+            status = "kurang";
+        }
+        else {
+            status = "sangat kurang";
+        }
+
+        document.write("Nilai: " + nilai + "<br>");
+        document.write("Status: " + status + "<br>");
+
+        document.write("<h3>5 Bentuk Bintang</h3>");
+
+        for (let a = 1; a <= 3; a++) {
+            for (let b = 1; b <= a; b++) {
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+
+        document.write("<br>");
+
+        for (let a = 3; a >= 1; a--) {
+            for (let b = 1; b <= a; b++) {
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+
+        document.write("<br>");
+
+        for (let a = 1; a <= 3; a++) {
+            for (let b = 1; b <= 5; b++) {
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+
+        document.write("<br>");
+
+        for (let a = 1; a <= 3; a++) {
+            for (let b = 1; b <= 10; b++) {
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+
+        document.write("<br>");
+
+        for (let a = 1; a <= 5; a++) {
+            for (let b = 1; b <= 5; b++) {
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+    </script>
+</body>
+
+</html>
